@@ -26,6 +26,3 @@
 2. 安装依赖：
    ```bash
    pip install -r requirements.txt
-   conda install-c conda-forge dlib
-   cd hw03
-   streamlit run src/streamlit_app.py
