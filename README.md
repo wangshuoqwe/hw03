@@ -1,14 +1,14 @@
 # 人脸识别系统 (HW03)
-基于 face_recognition 和 Streamlit 的人脸识别 Web 应用。
+基于 face_recognition 和 Streamlit 实现的人脸识别 Web 应用，用于《人工智能通识课》课程作业。
 
 ## 项目结构
  hw03/
-├── src/                  # 核心代码
-│   ├── face_recognition_logic.py  # 人脸识别逻辑
-│   └── streamlit_app.py           # Web界面
-├── known_faces/          # 已知人脸库
-├── requirements.txt      # 依赖列表
-└── README.md             # 项目说明
+├── src/                 
+│   ├── face_recognition_logic.py 
+│   └── streamlit_app.py          
+├── known_faces/          
+├── requirements.txt    
+└── README.md            
 
 ## 运行方式
 1. 安装依赖：`pip install -r requirements.txt`
@@ -20,3 +20,12 @@
 - 自动检测图片中的人脸位置并框选
 - 与已知人脸库比对，输出识别结果（姓名或Unknown）
 - 展示识别详情（人脸位置、识别标签）
+
+## 环境准备
+1. 确保已安装 Python 3.8~3.11
+2. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+conda install-c conda-forge dlib
+cd hw03
+streamlit run src/streamlit_app.py
